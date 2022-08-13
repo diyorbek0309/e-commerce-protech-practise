@@ -1,0 +1,113 @@
+/* General CSS boshlandi */
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.section_title {
+  font-size: 2.75rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  line-height: 120%;
+}
+
+.btn_blue,
+.btn_white:hover {
+  background-color: #003466;
+  color: #fff;
+  border: 2px solid #003466;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_white,
+.btn_blue:hover {
+  background-color: #fff;
+  color: #003466;
+  border: 2px solid #003466;
+}
+
+.btn_yellow {
+  background-color: #fe9e0d;
+  color: #fff;
+  border: 2px solid #fe9e0d;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_yellow:hover {
+  background-color: #fff;
+  color: #fe9e0d;
+  border: 2px solid #fe9e0d;
+}
+
+.btn_black {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_black:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+.product {
+    max-width: 18rem;
+}
+
+.product_text {
+  padding: 0.75rem;
+}
+
+.product_name {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.product_description {
+  font-size: 0.8rem;
+  line-height: 120%;
+  color: #666;
+}
+
+.product_price {
+  margin: 0.5rem 0;
+}
+
+.product_image {
+  background-color: #eee;
+  position: relative;
+}
+
+.product_image span {
+    display: inline-block;
+    background-color: #ccc;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.product_image div {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.3rem;
+}
+
+/* General CSS tugadi */
