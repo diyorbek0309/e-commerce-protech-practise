@@ -125,3 +125,111 @@ body{
 }
 
 /* General CSS tugadi */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1350px;
+  height: 100px;
+  background: #003466;
+}
+
+.men {
+  width: 125px;
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
+i {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.women {
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.children {
+  width: 104px;
+  height: 21px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+img {
+  height: 39.01px;
+  margin-left: 100px;
+  margin-top: 28px;
+}
+
+.searching {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: white;
+}
+
+.cart {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: white;
+}
+
+.contact {
+  width: 38px;
+  height: 38px;
+  left: 1201px;
+  top: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: white;
+}
+
+.social li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social i:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+  color: red;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li {
+  margin-left: 70px;
+  display: flex;
+}
+
+.social {
+  margin: auto;
+}
+
+svg {
+  margin-left: 20px;
+}
+
