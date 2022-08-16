@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <div class="cart">
+      <div class="cart_top">
+        <h1 class="cart_title">Added products to cart</h1>
+        <img src="../assets/images/close-icon.svg" alt="Close Icon" />
+      </div>
+      <div class="cart_table">
+        <table>
+          <tr>
+            <th></th>
+            <th>Product Name</th>
+            <th>Number</th>
+            <th>Price</th>
+            <th>Size</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/product1.svg" alt="product" /></td>
+            <td>
+              <span>Zara shirt </span><span>Lorem ipsum dolor sit amet.</span>
+            </td>
+            <td>
+              <button onclick="decrement(0)">-</button
+              ><span class="count">1 </span> pc<button onclick="increment(0)">
+                +
+              </button>
+            </td>
+            <td>100 000 sum</td>
+            <td>XL</td>
+            <td><img src="../assets/images/close-icon.svg" alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src="../assets/images/product1.svg" alt="product" /></td>
+            <td>
+              <span>Zara shirt </span><span>Lorem ipsum dolor sit amet.</span>
+            </td>
+            <td>
+              <button onclick="decrement(1)">-</button
+              ><span class="count">1</span>pc<button onclick="increment(1)">
+                +
+              </button>
+            </td>
+            <td>100 000 sum</td>
+            <td>XL</td>
+            <td><img src="../assets/images/close-icon.svg" alt="" /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="cart_bottom"></div>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
