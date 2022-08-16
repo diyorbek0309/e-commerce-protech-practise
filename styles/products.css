@@ -1,12 +1,11 @@
 .products_top,
-.products_bottom{
+.products_bottom {
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.product{
+.product {
   padding-right: 1rem;
 }
