@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
     <link rel="stylesheet" href="./styles/products.css" />
   </head>
   <body>
@@ -41,8 +42,10 @@
           <li class="searching">
             <i class="fa-solid fa-magnifying-glass"></i>
           </li>
-          <li class="cart_icon"><i class="fa-light fa-cart-shopping"></i></li>
-          <li class="contact"><i class="fa-solid fa-phone-flip"></i></li>
+          <li class="cart_icon" onclick="showCart()">
+            <img src="./assets/images/cart.svg" alt="Cart Icon" />
+          </li>
+          <li class="contact"></li>
           <li>
             <svg
               width="12"
@@ -256,6 +259,81 @@
     <footer></footer>
 
     <!-- Footer tugadi -->
+
+    <!-- Cart boshlandi -->
+
+    <div class="cart" style="display: none">
+      <div class="cart_top">
+        <h1 class="cart_title">Added products to cart</h1>
+        <img
+          src="../assets/images/close-icon.svg"
+          alt="Close Icon"
+          onclick="hideCart()"
+        />
+      </div>
+      <div class="table">
+        <div class="table_top">
+          <h3>Name product</h3>
+          <h3>Number</h3>
+          <h3>Price</h3>
+          <h3>SIze</h3>
+        </div>
+        <div class="table_bottom">
+          <div class="table_bottom_left">
+            <img src="../assets/images/product1.svg" alt="product" />
+          </div>
+          <div class="table_bottom_midlle">
+            <div class="name">
+              <h4>Zar rubashka</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="number">
+              <button onclick="decrement(0)">-</button
+              ><span class="count">1</span><span>pc</span
+              ><button onclick="increment(0)" class="blue">+</button>
+            </div>
+            <span>100000 sum</span>
+            <span>XL</span>
+          </div>
+          <div class="table_bottom_right" onclick="removeProduct(0)">
+            <img src="../assets/images/close-icon.svg" alt="close" />
+          </div>
+        </div>
+        <div class="table_bottom">
+          <div class="table_bottom_left">
+            <img src="../assets/images/product1.svg" alt="product" />
+          </div>
+          <div class="table_bottom_midlle">
+            <div class="name">
+              <h4>Zar rubashka</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="number">
+              <button onclick="decrement(1)">-</button
+              ><span class="count">1</span><span>pc</span
+              ><button onclick="increment(1)" class="blue">+</button>
+            </div>
+            <span>100000 sum</span>
+            <span>XL</span>
+          </div>
+          <div class="table_bottom_right" onclick="removeProduct(1)">
+            <img src="../assets/images/close-icon.svg" alt="close" />
+          </div>
+        </div>
+        <hr />
+        <div class="btn_div">
+          <button class="btn btn_blue">Send order</button>
+          <button class="btn btn_black">clear</button>
+        </div>
+      </div>
+      <div class="cart_empty">
+        <h2>You haven't added any products yet!</h2>
+      </div>
+    </div>
+
+    <!-- Cart tugadi -->
+    <div class="bg" onclick="hideCart()"></div>
+    <script src="main.js"></script>
   </body>
 </html>
 

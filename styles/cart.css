@@ -7,7 +7,11 @@
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  border: 2px solid black;
+  background-color: #fff;
+  position: absolute;
+  top: 16vh;
+  left: 26vw;
+  z-index: 11;
 }
 .cart_top {
   display: flex;

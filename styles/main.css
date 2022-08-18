@@ -203,6 +203,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .social i:hover {
@@ -261,6 +262,16 @@ header.home_header {
 
 .hero_arrow_right {
   right: 3rem;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  display: none;
 }
 
 /* Header tugadi */

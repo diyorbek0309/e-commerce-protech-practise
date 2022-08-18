@@ -9,3 +9,288 @@
 .product {
   padding-right: 1rem;
 }
+
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+header img {
+  width: 100%;
+}
+
+.img_hero {
+  position: relative;
+}
+
+.img_hero h1 {
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
+}
+
+header h1 {
+  color: #fff;
+  margin: 4rem 48.4rem 10.7rem 8.5 rem;
+  font-size: 5.6rem;
+  line-height: 7.3rem;
+  width: 33rem;
+  height: 7rem;
+  font-weight: 400;
+}
+
+/*Main boshlandi*/
+
+.products_main1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.main_section1 ul {
+  display: flex;
+  margin: 1.8rem 0 0 10rem;
+  list-style: none;
+}
+
+.products_main ul li {
+  padding-right: 0.2rem;
+}
+
+.products_main ul li a {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  align-items: center;
+  text-decoration: none;
+  color: #666666;
+  line-height: 1.1rem;
+}
+
+.products_main ul li a:hover {
+  color: #000000;
+}
+
+.products_main div h1 {
+  height: 3.5rem;
+  font-weight: 500;
+  font-size: 2.75rem;
+  line-height: 130%;
+  color: #000000;
+  text-align: center;
+  padding: 4.5rem 0 2.5rem;
+}
+
+.input_main {
+  position: relative;
+}
+
+.input_main input {
+  margin-top: 0.5rem;
+  margin-left: 6.625rem;
+  width: 16.6rem;
+  height: 3.125rem;
+  background-color: #ebebeb;
+  border: 1px solid #ebebeb;
+}
+
+.input_main input::placeholder {
+  padding: 1rem;
+  width: 3rem;
+  height: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.input_main span img {
+  position: absolute;
+  width: 1rem;
+  top: 1.7rem;
+  left: 21rem;
+}
+
+.main_sorting {
+  position: absolute;
+  margin-top: 1.25rem;
+  margin-left: 6.625rem;
+  width: 16.6rem;
+  height: 3.125rem;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+}
+
+.main_sorting span {
+  position: absolute;
+  width: 6.75rem;
+  height: 1.1rem;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  color: #000000;
+}
+
+.main_sorting span img {
+  position: absolute;
+  width: 0.6rem;
+  left: 13.5rem;
+}
+
+.main_catalog {
+  position: absolute;
+  margin-top: 6.25rem;
+  margin-left: 6.625rem;
+  padding-top: 1.7rem;
+  padding-left: 1.25rem;
+  width: 15.35rem;
+  height: 15rem;
+  border: 1px solid #ebebeb;
+  background-color: #f5f0f0;
+}
+
+.dropdowns .dropdown span {
+  width: 6.75rem;
+  height: 1.1rem;
+  top: 1.5rem;
+  left: 1rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  color: #000000;
+}
+
+.dropdowns .dropdown span img {
+  width: 0.6rem;
+  left: 13.5rem;
+}
+
+.dropdown div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  width: 18.5rem;
+  padding: 0 1.25rem;
+}
+
+.hidden_dropdown {
+  display: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.size_products {
+  position: absolute;
+  margin-top: 23.95rem;
+  margin-left: 6.625rem;
+  width: 16.6rem;
+  height: 3.125rem;
+}
+
+.size_products span {
+  width: 10.8rem;
+  height: 1.2rem;
+  left: 6.68rem;
+  top: 1rem;
+  border-bottom: 1px solid #b5b0a1;
+}
+
+.size_products .size {
+  margin: 1rem;
+}
+
+.size input {
+  position: absolute;
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border: 1px solid #666666;
+  border-radius: 1px;
+}
+
+.size label {
+  position: absolute;
+  width: 1.25rem;
+  height: 1rem;
+  left: 3.3rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+}
+
+.price_range {
+  position: absolute;
+  margin-top: 35.75rem;
+  margin-left: 6.625rem;
+  width: 16.6rem;
+  height: 3.125rem;
+}
+
+.price_range span {
+  width: 10.8rem;
+  height: 1.2rem;
+  left: 6.68rem;
+  top: 1rem;
+  border-bottom: 1px solid #b5b0a1;
+}
+
+.brands_filter .brand_filter {
+  margin: 1rem;
+}
+
+.brands_filter {
+  position: absolute;
+  margin-top: 42rem;
+  margin-left: 6.625rem;
+}
+
+.brands_filter span {
+  width: 10.8rem;
+  height: 1.2rem;
+  left: 6.68rem;
+  top: 1rem;
+  border-bottom: 1px solid #b5b0a1;
+}
+
+.brand_filter input {
+  position: absolute;
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border: 1px solid #666666;
+  border-radius: 1px;
+}
+
+.brand_filter label {
+  position: absolute;
+  width: 1.25rem;
+  height: 1rem;
+  left: 3.3rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+}
+
+.section2_buttom button {
+  margin: 1.9rem 1.7rem 0 0;
+}
+
+.main_section3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 7rem;
+  margin-left: 3.7rem;
+}
+
+.main_section3 .product {
+  margin: 0 1.25rem 1.9rem 0;
+}
+
+/*Main tugadi*/

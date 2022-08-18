@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/products.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Header boshlandi-->
+
+    <header>
+      <div class="img_hero">
+        <img src="../assets/images/man-601539 1.png" alt="Bu yerda rasm" />
+        <h1>NEW STYLE</h1>
+      </div>
+    </header>
+    <!--Header tugadi-->
+
+    <!--Main boshlandi-->
+
+    <main>
+      <div class="products_main">
+        <div class="main_section1">
+          <ul>
+            <li><a href="#">Main page</a></li>
+            <li>/</li>
+            <li><a href="#">For men</a></li>
+            <li>/</li>
+            <li><a href="#">Shirts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1>SHIRTS</h1>
+        </div>
+        <div class="products_main1">
+          <div class="main_section2">
+            <div class="input_main">
+              <input type="text" placeholder="Search..." />
+              <span
+                ><img
+                  src="../assets/images/magnifying-glass-solid.svg"
+                  alt="Right"
+              /></span>
+            </div>
+            <div class="main_sorting">
+              <span>Sorting by</span>
+              <span
+                ><img src="../assets/images/small-rch.svg" alt="chevron_down"
+              /></span>
+            </div>
+            <div class="main_catalog">
+              <div class="dropdowns">
+                <div class="dropdown">
+                  <div onclick="toggleDropdown(0)">
+                    <p>For Men</p>
+                    <span
+                      ><img
+                        src="../assets/images/small-rch.svg"
+                        alt="chevron_down"
+                    /></span>
+                  </div>
+                  <ul class="hidden_dropdown">
+                    <li>- Shirts</li>
+                    <li>- Sweatshirts</li>
+                    <li>- Jeans</li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <div onclick="toggleDropdown(1)">
+                    <p>For Women</p>
+                    <span
+                      ><img
+                        src="../assets/images/small-rch.svg"
+                        alt="chevron_down"
+                    /></span>
+                  </div>
+                  <ul class="hidden_dropdown">
+                    <li>- Shirts</li>
+                    <li>- Sweatshirts</li>
+                    <li>- Jeans</li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <div onclick="toggleDropdown(2)">
+                    <p>For Kids</p>
+                    <span
+                      ><img
+                        src="../assets/images/small-rch.svg"
+                        alt="chevron_down"
+                    /></span>
+                  </div>
+                  <ul class="hidden_dropdown">
+                    <li>- Shirts</li>
+                    <li>- Sweatshirts</li>
+                    <li>- Jeans</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="size_products">
+              <span>Filter by size</span>
+              <div class="size">
+                <input
+                  type="checkbox"
+                  id="vehicle1"
+                  name="vehicle1"
+                  value="size"
+                />
+                <label for="vehicle1"> XS</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle2"
+                  name="vehicle2"
+                  value="size"
+                />
+                <label for="vehicle2">S</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle3"
+                  name="vehicle3"
+                  value="size"
+                />
+                <label for="vehicle3">L</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle4"
+                  name="vehicle4"
+                  value="size"
+                />
+                <label for="vehicle4">M</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle5"
+                  name="vehicle5"
+                  value="size"
+                />
+                <label for="vehicle5">XL</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle6"
+                  name="vehicle6"
+                  value="size"
+                />
+                <label for="vehicle6">XXL</label><br />
+              </div>
+            </div>
+            <div class="price_range">
+              <span>Prace range</span>
+            </div>
+            <div class="brands_filter">
+              <span>Brand filter</span>
+              <div class="brand_filter">
+                <input
+                  type="checkbox"
+                  id="vehicle1"
+                  name="vehicle1"
+                  value="brand"
+                />
+                <label for="vehicle1">Zara</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle2"
+                  name="vehicle2"
+                  value="brand"
+                />
+                <label for="vehicle2">Legendr</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle3"
+                  name="vehicle3"
+                  value="brand"
+                />
+                <label for="vehicle3">ABB</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle4"
+                  name="vehicle4"
+                  value="brand"
+                />
+                <label for="vehicle4">Navigator</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle5"
+                  name="vehicle5"
+                  value="brand"
+                />
+                <label for="vehicle5">TELFOR</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle6"
+                  name="vehicle6"
+                  value="brand"
+                />
+                <label for="vehicle6">Wago</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle6"
+                  name="vehicle6"
+                  value="brand"
+                />
+                <label for="vehicle6">UniVersal</label><br />
+                <div class="section2_buttom">
+                  <button class="btn btn_yellow">Reset</button>
+                  <button class="btn btn_blue">Filter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_section3">
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product_image">
+                <img src="../assets/images/product1.svg" alt="Product" />
+                <div>
+                  <span>
+                    <img src="../assets/images/left-chevron.svg" alt="Left" />
+                  </span>
+                  <span>
+                    <img src="../assets/images/right-chevron.svg" alt="Left" />
+                  </span>
+                </div>
+              </div>
+              <div class="product_text">
+                <h3 class="product_name">Zara</h3>
+                <p class="product_description">Shirt with contrast design</p>
+                <p class="product_price">100 000 sum</p>
+                <button class="btn btn_white">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Main tugadi-->
+    <script src="../main.js"></script>
+  </body>
+</html>
