@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .cart {
   display: flex;
   flex-direction: column;
@@ -21,51 +26,106 @@
 
 .cart_top img {
   position: absolute;
-  top: 44%;
-  right: 3%;
+  width: 1rem;
+  top: 46%;
+  right: 4%;
 }
 
-.cart_table table {
-  width: 100%;
+.table {
+  width: 900px;
+  height: 530px;
+  /* border: 1px solid black; */
 }
 
-.cart_table td {
+.table_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ddd;
+  padding: 0 7rem;
+}
+
+.table_top h3 {
   padding: 1rem 0;
 }
 
-.cart_table table img {
+.table_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.table_bottom_midlle {
+  padding-right: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table_bottom_midlle .number span {
+  padding: 0.3rem 0.5rem;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_bottom_midlle button {
+  width: 35px;
+  height: 41px;
+  border: none;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_bottom_midlle .blue {
+  background-color: #003466;
+  color: #fff;
+}
+
+.table_bottom_midlle .name h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.table_bottom_midlle .number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table_bottom_midlle span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.table_bottom .table_bottom_left img {
   width: 5rem;
 }
 
-.cart_table tr td:nth-child(2) {
+.table_bottom_right {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.cart_table tr td:nth-child(2) span:first-child {
-  font-weight: 700;
-  font-size: 1rem;
+.btn_div {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn_div .btn {
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-.cart_table tr td:nth-child(2) span:first-child {
-  font-size: 0.75rem;
-}
-
-.cart_table tr td:nth-child(6) img {
-  width: 1.5rem;
-}
-
-.cart_table button {
-  padding: 0 0.8rem;
-  font-size: 2.5rem;
-}
-
-.cart_table table td:nth-child(3) span {
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 0.7rem 0.5rem;
-    border-bottom: 1px solid #aaa;
-    border-top: 1px solid #aaa;
+.cart_empty {
+  display: none;
 }

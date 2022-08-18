@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/cart.css" />
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/cart.css" />
   </head>
   <body>
     <div class="cart">
@@ -14,51 +14,86 @@
         <h1 class="cart_title">Added products to cart</h1>
         <img src="../assets/images/close-icon.svg" alt="Close Icon" />
       </div>
-      <div class="cart_table">
-        <table>
-          <tr>
-            <th></th>
-            <th>Product Name</th>
-            <th>Number</th>
-            <th>Price</th>
-            <th>Size</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td><img src="../assets/images/product1.svg" alt="product" /></td>
-            <td>
-              <span>Zara shirt </span><span>Lorem ipsum dolor sit amet.</span>
-            </td>
-            <td>
+      <div class="table">
+        <div class="table_top">
+          <h3>Name product</h3>
+          <h3>Number</h3>
+          <h3>Price</h3>
+          <h3>SIze</h3>
+        </div>
+        <div class="table_bottom">
+          <div class="table_bottom_left">
+            <img src="../assets/images/product1.svg" alt="product" />
+          </div>
+          <div class="table_bottom_midlle">
+            <div class="name">
+              <h4>Zar rubashka</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="number">
               <button onclick="decrement(0)">-</button
-              ><span class="count">1 </span> pc<button onclick="increment(0)">
-                +
-              </button>
-            </td>
-            <td>100 000 sum</td>
-            <td>XL</td>
-            <td><img src="../assets/images/close-icon.svg" alt="" /></td>
-          </tr>
-          <tr>
-            <td><img src="../assets/images/product1.svg" alt="product" /></td>
-            <td>
-              <span>Zara shirt </span><span>Lorem ipsum dolor sit amet.</span>
-            </td>
-            <td>
+              ><span class="count">1</span><span>pc</span
+              ><button onclick="increment(0)" class="blue">+</button>
+            </div>
+            <span>100000 sum</span>
+            <span>XL</span>
+          </div>
+          <div class="table_bottom_right" onclick="removeProduct(0)">
+            <img src="../assets/images/close-icon.svg" alt="close" />
+          </div>
+        </div>
+        <div class="table_bottom">
+          <div class="table_bottom_left">
+            <img src="../assets/images/product1.svg" alt="product" />
+          </div>
+          <div class="table_bottom_midlle">
+            <div class="name">
+              <h4>Zar rubashka</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="number">
               <button onclick="decrement(1)">-</button
-              ><span class="count">1</span>pc<button onclick="increment(1)">
-                +
-              </button>
-            </td>
-            <td>100 000 sum</td>
-            <td>XL</td>
-            <td><img src="../assets/images/close-icon.svg" alt="" /></td>
-          </tr>
-        </table>
+              ><span class="count">1</span><span>pc</span
+              ><button onclick="increment(1)" class="blue">+</button>
+            </div>
+            <span>100000 sum</span>
+            <span>XL</span>
+          </div>
+          <div class="table_bottom_right" onclick="removeProduct(1)">
+            <img src="../assets/images/close-icon.svg" alt="close" />
+          </div>
+        </div>
+        <div class="table_bottom">
+          <div class="table_bottom_left">
+            <img src="../assets/images/product1.svg" alt="product" />
+          </div>
+          <div class="table_bottom_midlle">
+            <div class="name">
+              <h4>Zar rubashka</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="number">
+              <button onclick="decrement(2)">-</button
+              ><span class="count">1</span><span>pc</span
+              ><button onclick="increment(2)" class="blue">+</button>
+            </div>
+            <span>100000 sum</span>
+            <span>XL</span>
+          </div>
+          <div class="table_bottom_right" onclick="removeProduct(2)">
+            <img src="../assets/images/close-icon.svg" alt="close" />
+          </div>
+        </div>
+        <hr />
+        <div class="btn_div">
+          <button class="btn btn_blue">Send order</button>
+          <button class="btn btn_black">clear</button>
+        </div>
       </div>
-      <div class="cart_bottom"></div>
+      <div class="cart_empty">
+        <h2>You haven't added any products yet!</h2>
+      </div>
     </div>
-
     <script src="../main.js"></script>
   </body>
 </html>
