@@ -275,3 +275,58 @@ header.home_header {
 }
 
 /* Header tugadi */
+
+/* footer boshlandi  */
+.footer1 {
+  background-color: #032546; 
+  padding: 4rem 6rem;
+}
+
+.footer2 {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+a { 
+  color: #fff;
+}
+
+hr {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.16)
+}
+
+p { 
+  color: white;
+}
+
+.chap5, .chap6 {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.chap5 a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgb(67, 38, 122);
+}
+
+.chap5 a img {
+  width: 1.2rem;
+}
+
+
+
+
+
+/* footer tugadi  */
+
