@@ -10,12 +10,7 @@
   padding-right: 1rem;
 }
 
-* {
-  margin: 0;
-  padding: 0%;
-}
-
-header img {
+.products_header img {
   width: 100%;
 }
 

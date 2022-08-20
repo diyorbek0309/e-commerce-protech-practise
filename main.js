@@ -81,3 +81,24 @@ function suriw(b) {
   p += b * 190;
   car.style.left = p + "px";
 }
+
+let bgIndex = 1;
+
+function slide(side) {
+  let bgs = [
+    "url(./assets/images/bg3.jpg)",
+    "url(./assets/images/hero-bg.png)",
+    "url(./assets/images/bg2.jpg)",
+  ];
+
+  if (side) {
+    if (bgIndex < 2) bgIndex++;
+    else if (bgIndex === 2) bgIndex = 0;
+  } else {
+    if (bgIndex > 0) bgIndex--;
+    else if (bgIndex === 0) bgIndex = 2;
+  }
+
+  document.getElementsByClassName("home_header")[0].style.backgroundImage =
+    bgs[bgIndex];
+}
