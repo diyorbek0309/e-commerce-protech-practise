@@ -3,8 +3,6 @@ let count = document.getElementsByClassName("count");
 let products = document.getElementsByClassName("table_bottom");
 let cart_empty = document.getElementsByClassName("cart_empty")[0];
 let cart = document.getElementsByClassName("cart")[0];
-let table_top = document.getElementsByClassName("table_top")[0];
-let btn_div = document.getElementsByClassName("btn_div")[0];
 let arrows = document.querySelectorAll(".main_catalog .dropdown img");
 
 let saver = false,
@@ -23,8 +21,7 @@ function removeProduct(index) {
   counter++;
   if (products.length === counter) {
     cart_empty.style.display = "block";
-    table_top.style.display = "none";
-    btn_div.style.display = "none";
+    document.getElementsByClassName("table")[0].remove();
   }
   products[index].style.display = "none";
 }
