@@ -49,3 +49,35 @@ function toggleDropdown(index) {
     arrows[index].style.transform = "rotate(90deg)";
   }
 }
+
+let car = document.getElementById("caruselcha");
+let xd = "";
+function addTodo() {
+  console.log("1");
+  let div = document.createElement("div");
+  div.className = "corusel";
+  for (let i = 1; i <= 40; i++) {
+    xd += `<div class="brand"><img src="./assets/images/clarins-vector-logo 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/nike_PNG12 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/zara-logo-1 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/penti-vector-logo-400x400 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/Без названия 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/nike_PNG12 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/zara-logo-1 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/nike_PNG12 1.svg" alt=""></div>
+        <div class="brand"><img src="./assets/images/zara-logo-1 1.svg" alt=""></div>
+        `;
+  }
+  div.innerHTML = xd;
+
+  car.appendChild(div);
+}
+
+addTodo();
+
+let p = -5360;
+
+function suriw(b) {
+  p += b * 190;
+  car.style.left = p + "px";
+}

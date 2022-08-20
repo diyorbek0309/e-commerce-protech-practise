@@ -276,6 +276,70 @@ header.home_header {
 
 /* Header tugadi */
 
+/* Main */
+
+.contener {
+  padding: 4rem 10rem;
+}
+
+.brands_save {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  border: 1px #999 solid;
+  border-radius: 50%;
+  margin: 1.6rem;
+}
+#caruselcha {
+  position: relative;
+  left: -5440px;
+  z-index: -1;
+  transition: 1s all linear;
+}
+
+.corusel {
+  display: flex;
+  justify-content: center;
+}
+
+.chervons {
+  position: relative;
+  cursor: pointer;
+}
+
+.str {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 330px;
+}
+
+.str div:first-child {
+  left: 6rem;
+}
+
+.str div:last-child {
+  right: 6rem;
+}
+
+.brands {
+  position: relative;
+}
+
+/* Main */
+
 /* footer boshlandi  */
 .footer1 {
   background-color: #032546;
@@ -334,3 +398,14 @@ p {
 }
 
 /* footer tugadi  */
+
+.up {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: 2px solid #003466;
+}
